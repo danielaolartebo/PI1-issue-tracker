@@ -1,4 +1,5 @@
 function fetchIssues () {
+  
     var issues = JSON.parse(localStorage.getItem('issues'));
     var issuesList = document.getElementById('issuesList');
     
@@ -18,7 +19,9 @@ function fetchIssues () {
                                   '<h3>' + desc + '</h3>'+
                                   '<p><span class="glyphicon glyphicon-time"></span> ' + severity + ' '+
                                   '<span class="glyphicon glyphicon-user"></span> ' + assignedTo + '</p>'+
-                                  '</div>';
+                                  '<a href="#" class="btn btn-warning" onclick="setStatusClosed(\''+id+'\')">Close</a>'
+                                  '</div>'
+                                  
       }
     }
   }
