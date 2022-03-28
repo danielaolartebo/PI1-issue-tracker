@@ -58,12 +58,6 @@ function saveIssue(e) {
   e.preventDefault(); 
 }
 
-function fetchIssues () {
-
-  var issues = JSON.parse(localStorage.getItem('issues'));
-
-}
-
 function setStatusClosed (id) {
     var issues = JSON.parse(localStorage.getItem('issues'));
     
