@@ -12,6 +12,28 @@
     <body onload="fetchIssues()">
         <div class="container">
             <h1>Issue Tracker</h1>
+
+
+            <div class="jumbotron"> 
+                <h3>Add New Issue:</h3>
+                <form id="issueInputForm"> 
+                    <div class="form-group"> 
+                        <label for="issueDescInput">Description</label>
+                        <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue ..."> 
+                    </div>
+                    <div class="form-group">
+                        <label for="issueDescInput">Severity</label> 
+                        <select class="form-control" id="issueSeverityInput">
+                        <option value="Low">Low</option> <option value="Medium">Medium</option>
+                        <option value="High">High</option> </select>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="issueDescInput">Assigned To</label>
+                        <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible ...">
+                    </div> 
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </form> 
+            </div>
             <div class="footer">
                 <p>Taller en Clase de Proyecto Integrador 1 - 2022</p>
             </div>
